@@ -17,8 +17,22 @@ class ImageList extends StatelessWidget{
    );
   }
  Widget buildImage(ImageModel imageModel){
-    return Image.network(imageModel.url);
-
+    return Container(
+   child:Column(
+     children: [
+       Image.network(imageModel.url),
+       Padding(
+         padding: EdgeInsets.only(top:12),
+         child: Text(imageModel.title),
+       )
+     ],
+   ),
+      margin: EdgeInsets.all(16),
+      padding:EdgeInsets.all(16),
+      decoration: BoxDecoration(
+          border:Border.all(width:2)
+      ),
+   );
  }
 }
 
