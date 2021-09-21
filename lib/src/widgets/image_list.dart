@@ -24,7 +24,7 @@ class ImageList extends StatelessWidget{
        Padding(
          padding: EdgeInsets.only(top:12),
          child: Text(imageModel.title),
-       )
+       ),
      ],
    ),
       margin: EdgeInsets.all(16),
